@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Punith & Vanshika getting hitched!</title>
+    <meta
+      name="description"
+      content="We would like to invite you to our big day."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Punith & Vanshika getting hitched" />
+    <meta
+      property="og:description"
+      content="We would like to invite you to our big day."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+
+    <script>
+      // load css files from CDN if local node_modules fail
+      function loadCssFromCDN(css) {
+        // create new link tag
+        const link = document.createElement("link");
+        if (css === "animate.css") {
+          link.href =
+            "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css";
+        } else if (css === "font-awesome.css") {
+          link.href =
+            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+        }
+        link.rel = "stylesheet";
+
+        // add link tag to head section
+        document.getElementsByTagName("head")[0].appendChild(link);
+      }
+
+      // load js files from CDN if local node_modules fail
+      function loadJsFromCDN(js) {
+        if (js === "waypoints.js") {
+          document.write(
+            '<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>'
+          );
+        } else if (js === "jquery.js") {
+          document.write(
+            '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>'
+          );
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="css/mystyles.css?v=2" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/animate.css/animate.min.css"
+      onerror="loadCssFromCDN('animate.css')"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+      onerror="loadCssFromCDN('font-awesome.css')"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
+  <body id="top">
+    <section class="hero reveal">
+      <section class="navigation">
+        <header>
+          <div class="header-content">
+           <div class="logo">
+				<h3 style="font-weight: bold; color: white;">P<span class="fa fa-heart pulse2" style="color: red"></span>V</h3>
+			  </div>
+            <div class="header-nav">
+              <nav>
+                <ul class="primary-nav">
+                  <li><a href="#events">Events</a></li>
+                  <li><a href="#ourstory">Our Story</a></li>
+				  <li><a href="#eng-pics">Pre Wedding</a></li>
+                  <li class="hidden-sm hidden-xs"><a href="#video-bg1">Glimpse of the city</a></li>
+                </ul>
+                <ul class="member-actions">
+                  <li><a href="#map" class="login">Venue</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="navicon">
+              <a class="nav-toggle" href="#"><span></span></a>
+            </div>
+          </div>
+        </header>
+      </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div></div>
+            <div class="hero-content text-center">
+             <h1 id="titletext">
+                Punith 
+                <span class="fa fa-heart pulse2" style="color: red"></span>
+                Vanshika
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="down-arrow floating-arrow">
+        <a href="#invitation"><i class="fa fa-angle-down"></i></a>
+      </div>
+    </section>
+
+    <section id="invitation" class="section-padding reveal">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center tracking-in-expand">
+            <h3>Let's Freeze the time</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-timer reveal">
+      <div id="mycountdown" class="countdown-clock">
+        <div>
+          <p id="days" >00</p>
+          <span>Days</span>
+        </div>
+        <div>
+          <p id="hours">00</p>
+          <span>Hours</span>
+        </div>
+        <div>
+          <p id="minutes">00</p>
+          <span>Minutes</span>
+        </div>
+        <div>
+          <p id="seconds">00</p>
+          <span>Seconds</span>
+        </div>
+      </div>
+
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("October 27, 2024 09:30:00").getTime();
+
+        // Update the countdown every 1 second
+        var x = setInterval(function () {
+          // Get the current date and time
+          var now = new Date().getTime();
+
+          // Calculate the time remaining
+          var distance = countDownDate - now;
+
+          // Calculate days, hours, minutes, and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the countdown in the "countdown" div
+          document.getElementById("days").innerHTML = days;
+          document.getElementById("hours").innerHTML = hours;
+          document.getElementById("minutes").innerHTML = minutes;
+          document.getElementById("seconds").innerHTML = seconds;
+
+          // If the countdown is over, display a message
+          if (distance < 0) {
+            clearInterval(x);
+            const countdownElement = document.getElementById("mycountdown");
+            countdownElement.innerHTML = "April 28th 2024 <br> 23:59:00";
+            countdownElement.classList.add("mycountdown");
+          }
+        }, 1000); // Update every 1 second
+      </script>
+    </section>
+
+    <section class="events section-padding reveal" id="events">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="header">Events</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+            <div class="wp3">
+              <p><strong>26th October</strong></p>
+
+              <h5>Wedding Reception <span class="time">7PM onwards</span></h5>
+              <p>
+                A South Indian Hindu wedding reception, held the night before the wedding, is a joyful celebration where the couple is introduced to family and friends. It marks the official start of the festivities, with vibrant decor, traditional music, and dance. The bride and groom typically wear elegant traditional attire, and guests enjoy a lavish feast. This evening is a time for socializing, offering blessings to the couple, and celebrating the union with love, laughter, and cultural performances.
+              </p>
+              <p style="display: flex; justify-content: left;"><b>Venue</b>: 
+			  Samskruti Pavilion Convention Centre, 
+			  Sulikunte, Sarjapur-   Marathahalli Rd, Bengaluru</p>
+              <div id="venmap" class="VenueButton">
+                <button id="venueBtn">G-Map</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+            <div class="wp4">
+              <p><strong>27th October</strong></p>
+            </div>
+            <div class="wp6">
+              <h5>Wedding Muhurtam<span class="time">09:00AM</span></h5>
+              <p>
+                A South Indian Hindu wedding is a vibrant celebration that blends religious rituals with cultural traditions. The wedding ceremony, held during the auspicious muhurtam, includes sacred fire rituals, the tying of the thali (mangalsutra), and seven vows around the fire, symbolizing the couple's eternal bond. The bride typically wears a silk saree, and the groom wears traditional attire, with rituals that honor family, ancestors, and deities, marking the start of their married life with blessings and joy..
+              </p>
+             <p style="display: flex; justify-content: left;"><b>Venue</b>: 
+			  Samskruti Pavilion Convention Centre, 
+			  Sulikunte, Sarjapur-   Marathahalli Rd, Bengaluru</p>
+              <div id="venmap" class="VenueButton">
+                <button id="venueBtn1">G-Map</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="eng-pics" class="section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Pre Wedding Pics</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/1-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/1-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+			 <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/2-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/2-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/3-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/3-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+           
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/4-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/4-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+		   
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/55-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/55-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/6-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/6-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row hidden-lg hidden-md hidden-xs">
+            <div class="col-xs-12 section-border section-padding"></div>
+        </div>
+    </div>
+</section>
+
+    <section class="reveal">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="tracking-in-expand">Cheers to the new beginnings</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="video-bg" class="section-padding reveal">
+      <div
+        id="bgndVideo"
+        class="player"
+        data-property="{videoURL:'https://youtu.be/nWvjPPZFlTI',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:0, stopAt:120, opacity:1}"
+      ></div>
+      <div id="video-content">
+        <h5>Bengaluru</h5>
+        <p>Garden City</p>
+      </div>
+    </section>
+	
+
+    <section id="map" class="section-padding reveal">
+      <div class="text-center">
+        <h3>How do I get there?</h3>
+        <p>It's way easier than you think!</p>
+      </div>
+      <div id="map-canvas"></div>
+      <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row">
+          <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+            <div class="text-center">
+              <div
+                id="btn-show-content"
+                class="toggle-map-content pointer-events-auto"
+              >
+                <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+              </div>
+            </div>
+            <div id="map-content" class="pointer-events-auto">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Samskruti Pavilion Convention Centre</h5>
+                  <p>Sulikunte, Sarjapur-Marathahalli Rd, Bengaluru 562125 </p>
+                </div>
+                <div class="col-md-6">
+                  <h5>Mr. Punith</h5>
+                  <p>
+                    <i class="fa fa-mobile"></i>
+                    <a href="tel://+917204510389">+91 6363974583</a><br />
+                  </p>
+                </div>
+              </div>
+              <div class="row text-center">
+                <div class="col-md-6" style="padding: 5px">
+                  <a
+                    class="btn btn-fill btn-small"
+                    href="https://m.uber.com/ul/?action=setPickup&client_id=K71MjqN25jJzj-evKrX2LP-XG1LvMBer&pickup=my_location&dropoff[formatted_address]=Samskruti%20Pavilion%20Convention%20Center%20and%20Events%20Venue%20Bengaluru&dropoff[latitude]=12.894086&dropoff[longitude]=77.726032"
+                    ><i class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a
+                  >
+                </div>
+                <div class="col-md-6" style="padding: 5px">
+                  <a class="btn btn-accent btn-small" id="btn-show-map"
+                    ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center content">
+            <span class="to-top-wrapper"
+              ><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a
+            ></span>
+            <p style="font-size: small; font-family: Sofia">
+              Crafted by Punith with lots of
+              <span class="fa fa-heart pulse2"></span> for Vanshika
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="js/vendor/jquery-1.11.2.min.js"
+      onerror="loadJsFromCDN('jquery.js')"
+    ></script>
+    <script
+      src="node_modules/waypoints/lib/jquery.waypoints.min.js"
+      onerror="loadJsFromCDN('waypoints.js')"
+    ></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTSq9LdwoDyNhBnyq2nhzHBoeFNBITuw4&callback=initMap"
+    ></script>
+  </body>
+</html>
